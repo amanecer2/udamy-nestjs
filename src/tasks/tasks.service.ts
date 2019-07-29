@@ -5,13 +5,8 @@ import { GetTasksFilterDto } from './dto/get-tasks-filter.dto';
 
 @Injectable()
 export class TasksService {
-  private _tasks: TaskModal[] = [
-    new TaskModal('init des', TaskStatus.DONE, 'init title'),
-    new TaskModal('init des2', TaskStatus.OPEN, 'init title2'),
-    new TaskModal('init des3', TaskStatus.IN_PROGRESS, 'init title3'),
-  ];
 
-  get tasks(): TaskModal[] {
+  /*get tasks(): TaskModal[] {
     return this._tasks;
   }
 
@@ -56,5 +51,5 @@ export class TasksService {
     const task = this.getTaskById(id);
     task.status = newStatus;
     return newStatus;
-  }
+  }*/
 }

@@ -10,7 +10,7 @@ export class TasksController {
   constructor(private tasksService: TasksService) {
   }
 
-  @Get()
+  /*@Get()
   getTasks(@Query(ValidationPipe) getTasksFilterDto: GetTasksFilterDto): TaskModal[] {
     if (Object.keys(getTasksFilterDto).length) {
       return this.tasksService.getTaskWithFilters(getTasksFilterDto);
@@ -41,5 +41,5 @@ export class TasksController {
     @Body('status', TasksStatusValidationPipe) status: TaskStatus,
     ) {
     this.tasksService.updateTaskStatus(id, status);
-  }
+  }*/
 }
